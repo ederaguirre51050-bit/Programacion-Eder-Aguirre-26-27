@@ -1,13 +1,39 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-  // to see how IntelliJ IDEA suggests fixing it.
-  IO.println(String.format("Hello and welcome!"));
 
-  for (int i = 1; i <= 5; i++) {
-    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    IO.println("i = " + i);
-  }
+static int [][] numeros = new int[4][4];
+void main() {
+  System.out.println("Rellename todos los numeros");
+rellenarnumeros();
+System.out.println(Arrays.deepToString(numeros));
+
+}
+private static void rellenarnumeros(){
+    Scanner dc = new Scanner(System.in);
+    System.out.println("Primera fila");
+    for (int x = 0; x < numeros.length; x++){
+    numeros[0][x] = dc.nextInt();
+    }
+    System.out.println("Segunda fila");
+    for (int x = 0; x < numeros.length; x++){
+        numeros[1][x] = dc.nextInt();
+    }
+    System.out.println("Tercera fila");
+    for (int x = 0; x < numeros.length; x++){
+        numeros[2][x] = dc.nextInt();
+    }
+    System.out.println("Cuarta fila");
+    for (int x = 0; x < numeros.length; x++){
+        numeros[3][x] = dc.nextInt();
+    }
+
+}
+private static void sumarcolumna(){
+    Scanner dc = new Scanner(System.in);
+    System.out.println("dime que columna quieres sumar entre 1 y 4");
+    int filaSumNum = dc.nextInt();
+    filaSumNum = filaSumNum - 1;
+    for (int x = 0; x < numeros.length; x++){
+
+    }
 }
